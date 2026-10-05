@@ -33,9 +33,7 @@
 							<p>
 									Con un oficio aprendido a lo largo de tres generaciones, Mamparas AJ es una empresa familiar que asegura la calidad de sus productos y la satisfacción de sus clientes en cada trabajo realizado. <br><br>
 
-									Nuestra prioridad a la hora de llevar a cabo cualquier proyecto es que sea pensado, diseñado y confeccionado a medida de quienes confían en nosotros.<br><br>
-
-									Nuestro showroom está en Olivos, tenemos algunos modelos de mamparas armadas y podés ver todos los materiales con los que trabajamos: herrajes, vidrios, perfiles, etc. Se puede pasar con cita previa para asegurarnos que haya un técnico para recibirte, que te pueda mostrar y asesorar.
+									Nuestra prioridad a la hora de llevar a cabo cualquier proyecto es que sea pensado, diseñado y confeccionado a medida de quienes confían en nosotros.
 								</p>
 							<ul class="actions stacked">
 								<li><a href="#servicio" class="button primary large wide smooth-scroll-middle">Conocenos</a></li>
@@ -170,9 +168,7 @@
 	<div class="inner">
 		<h2>Visitá nuestro showroom</h2>
 		<p>
-			Estamos en Olivos. Podés visitar nuestro showroom con cita previa,
-			conocer nuestros modelos y ver de cerca los diferentes materiales,
-			herrajes, vidrios y perfiles con los que trabajamos.
+			Coordiná una cita para que un técnico puedas recibirte y asesorarte sobre nuestros modelos. Podrás ver de cerca los diferentes materiales, herrajes, vidrios y perfiles con los que trabajamos. 
 		</p>
 	</div>
 
@@ -207,46 +203,43 @@
 		<!-- FORMULARIO -->
 		<div class="showroom-column">
 
-			<h3>Envianos tu consulta</h3>
+			<h3>Pedí tu presupuesto y recibí una cotización en 24hs.</h3>
 
-			<p>
-				¿Querés recibir asesoramiento o solicitar un presupuesto?
-				Completá el formulario y nos pondremos en contacto con vos.
-			</p>
 
 			<form method="post" action="#">
+												<div class="fields">
+													<div class="field half">
+														<label for="name">Name y apellido</label>
+														<input type="text" name="name" id="name" value="" />
+													</div>
+													<div class="field half">
+														<label for="email">Email</label>
+														<input type="email" name="email" id="email" value="" />
+													</div>
+													<div class="field">
+														<label for="department">Localidad</label>
+														<select name="department" id="department">
+															<option value="">- Ver opciones -</option>
+															<option value="1">CABA</option>
+															<option value="2">GBA NORTE</option>
+															<option value="3">GBA SUR</option>
+															<option value="4">GBA ESTE</option>
+															<option value="5">GBA OESTE</option>
 
-				<div class="fields">
-
-					<div class="field">
-						<label for="name">Nombre</label>
-						<input type="text" name="name" id="name" placeholder="Tu nombre" required />
-					</div>
-
-					<div class="field">
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email" placeholder="tu@email.com" required />
-					</div>
-
-					<div class="field">
-						<label for="message">Consulta</label>
-						<textarea
-							name="message"
-							id="message"
-							rows="7"
-							placeholder="Contanos qué necesitás..."
-							required></textarea>
-					</div>
-
-				</div>
-
-				<ul class="actions special">
-					<li>
-						<input type="submit" name="submit" value="Enviar consulta" />
-					</li>
-				</ul>
-
-			</form>
+														</select>
+													</div>
+													
+													<div class="field">
+														<label for="message">Message</label>
+														<textarea name="message" id="message" rows="6">Hola, quiero pedir un presupuesto para un baño con las siguientes características: ancho, alto, profundidad, etc.
+														</textarea>
+													</div>
+													
+												</div>
+												<ul class="actions">
+													<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+												</ul>
+											</form>
 
 		</div>
 
