@@ -8718,3 +8718,177 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+
+
+/* Título siempre visible sobre la imagen */
+.gallery article .caption h3 {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    position: relative;
+    z-index: 2;
+}
+
+/* El caption permanece visible */
+.gallery article .caption {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* El botón puede seguir apareciendo con hover */
+.gallery article .caption .actions {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery article:hover .caption .actions {
+    opacity: 1;
+}
+
+.gallery article .caption {
+    opacity: 1 !important;
+    visibility: visible !important;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0)
+    );
+}
+
+.gallery article .caption h3 {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    margin: 0;
+}
+
+.gallery article .caption .actions {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery article:hover .caption .actions {
+    opacity: 1;
+}
+
+.gallery article .caption {
+    opacity: 1 !important;
+    visibility: visible !important;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0)
+    );
+}
+
+.gallery article .caption h3 {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    margin: 0;
+}
+
+.gallery article .caption .actions {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery article:hover .caption .actions {
+    opacity: 1;
+}
+
+/* Título en la imagen ampliada */
+.modal .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    color: #fff;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 0.6rem 1.2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+/* Título del modelo en la imagen full */
+.modal .caption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.65);
+	padding: 0.5rem 1rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;
+	z-index: 10;
+}
+
+/* =========================
+   ESPACIO ANTES DEL SHOWROOM
+========================= */
+
+.showroom-section {
+	padding-top: 4rem !important;
+}
+
+
+.showroom-section {
+	padding-top: 2rem !important;
+}
+
+/* =========================
+   BOTONES DE NAVEGACIÓN INFERIOR
+========================= */
+
+section > .actions.special {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+	width: 100%;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+section > .actions.special li {
+	margin: 0;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 736px) {
+
+	section > .actions.special {
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	section > .actions.special li {
+		width: auto;
+	}
+
+	section > .actions.special .button {
+		width: auto;
+		min-width: 200px;
+		text-align: center;
+	}
+}
+
