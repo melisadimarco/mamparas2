@@ -9459,3 +9459,69 @@ h1,
         font-size: 0.95rem;
     }
 }
+
+/* =========================
+   BARRA SUPERIOR ROTATIVA
+========================= */
+
+.announcement-bar {
+    width: 100%;
+    height: 42px;
+    background: #102e50;
+    color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2000;
+}
+
+.announcement-track {
+    display: flex;
+    width: max-content;
+    white-space: nowrap;
+    animation: announcement-scroll 22s linear infinite;
+}
+
+.announcement-track a {
+    color: #ffffff !important;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: none !important;
+    padding: 0 45px;
+    letter-spacing: 0.03em;
+}
+
+.announcement-track a:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+@keyframes announcement-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Adaptación a celulares */
+@media screen and (max-width: 736px) {
+    .announcement-bar {
+        height: 38px;
+    }
+
+    .announcement-track a {
+        font-size: 0.75rem;
+        padding: 0 25px;
+    }
+}
+
+/* Accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    .announcement-track {
+        animation: none;
+    }
+}
