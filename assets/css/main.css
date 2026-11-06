@@ -2311,6 +2311,89 @@ input, select, textarea {
 	color: #ffffff;
 }
 
+/* =========================
+   DESTACADO WHATSAPP
+========================= */
+
+.whatsapp-banner {
+    background: #eaf5fa;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-top: 1px solid #d8eaf2;
+    border-bottom: 1px solid #d8eaf2;
+}
+
+.whatsapp-banner-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.whatsapp-label {
+    display: inline-block;
+    color: #397b98;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin-bottom: 1rem;
+}
+
+.whatsapp-banner h2 {
+    font-size: 2rem;
+    line-height: 1.25;
+    color: #263e4b;
+    margin-bottom: 1rem;
+}
+
+.whatsapp-banner p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #526873;
+    margin-bottom: 1.8rem;
+}
+
+.whatsapp-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    background: #25D366;
+    color: #ffffff !important;
+    padding: 0.9rem 1.8rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.whatsapp-cta:hover {
+    background: #1eaf55;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 736px) {
+
+    .whatsapp-banner {
+        padding: 3rem 1.3rem;
+    }
+
+    .whatsapp-banner h2 {
+        font-size: 1.6rem;
+    }
+
+    .whatsapp-banner p {
+        font-size: 0.95rem;
+    }
+
+    .whatsapp-cta {
+        width: 100%;
+        max-width: 300px;
+    }
+}
 
 /* ========================================
    MOBILE
@@ -9237,4 +9320,18 @@ h1,
         text-align: center;
     }
 
+}
+
+/* =========================
+   TÍTULOS Y TEXTOS DE PRODUCTOS
+========================= */
+
+.texto-productos h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.texto-productos p {
+    font-size: 1rem;
+    line-height: 1.6;
 }
