@@ -3132,6 +3132,88 @@ input, select, textarea {
     }
 }
 
+/* =========================
+   FOOTER MINIMALISTA
+========================= */
+
+footer {
+    background: #000000 !important;
+    color: #ffffff !important;
+    padding: 1rem 2rem !important;
+    margin: 0 !important;
+}
+
+footer .inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* Íconos redes sociales */
+
+footer .icons {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin: 0 !important;
+    padding: 0;
+}
+
+footer .icons li {
+    padding: 0;
+    margin: 0;
+}
+
+footer .icons a {
+    color: #ffffff !important;
+    border: none !important;
+    font-size: 1.1rem;
+    transition: opacity 0.2s ease;
+}
+
+footer .icons a:hover {
+    opacity: 0.6;
+}
+
+/* Derechos reservados */
+
+footer p {
+    color: #ffffff !important;
+    margin: 0 !important;
+    font-size: 0.75rem;
+    text-align: right;
+}
+
+footer p a {
+    color: #ffffff !important;
+    border: none !important;
+    text-decoration: none;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 736px) {
+    footer {
+        padding: 1rem !important;
+    }
+
+    footer .inner {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.7rem;
+    }
+
+    footer p {
+        text-align: center;
+    }
+}
+
 /* Table */
 
 	.table-wrapper {
