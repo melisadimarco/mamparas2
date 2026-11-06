@@ -9335,3 +9335,127 @@ h1,
     font-size: 1rem;
     line-height: 1.6;
 }
+
+/* =========================
+   PRODUCTOS EN DOS COLUMNAS
+========================= */
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 0;
+}
+
+.producto-card {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    text-decoration: none !important;
+    border: none !important;
+    background: #263e4b;
+}
+
+.producto-card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Capa oscura sobre la imagen */
+
+.producto-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.35);
+    transition: background 0.4s ease;
+}
+
+/* Texto */
+
+.producto-texto {
+    max-width: 420px;
+    color: #ffffff;
+}
+
+.producto-texto h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.producto-texto p {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.producto-link {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(255,255,255,0.8);
+    padding-bottom: 0.3rem;
+}
+
+/* HOVER */
+
+.producto-card:hover img {
+    transform: scale(1.06);
+}
+
+.producto-card:hover .producto-overlay {
+    background: rgba(0, 0, 0, 0.58);
+}
+
+.producto-card:hover .producto-link {
+    border-bottom-width: 2px;
+}
+
+/* Foco para navegación con teclado */
+
+.producto-card:focus-visible {
+    outline: 3px solid #25D366;
+    outline-offset: -3px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 736px) {
+
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .producto-card {
+        height: 320px;
+    }
+
+    .producto-overlay {
+        background: rgba(0, 0, 0, 0.48);
+        padding: 1.5rem;
+    }
+
+    .producto-texto h2 {
+        font-size: 1.7rem;
+    }
+
+    .producto-texto p {
+        font-size: 0.95rem;
+    }
+}
