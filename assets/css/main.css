@@ -9212,3 +9212,29 @@ h1,
 }
 
 
+/* BOTONES FINALES - MOBILE */
+
+@media screen and (max-width: 736px) {
+
+    .actions.special {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+        width: 100%;
+    }
+
+    .actions.special li {
+        width: 100%;
+        padding: 0;
+    }
+
+    .actions.special li .button {
+        display: block;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
